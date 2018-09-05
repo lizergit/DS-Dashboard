@@ -40,8 +40,11 @@
     <title>Project Dashboard</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <h1>Project Name</h1>
+
+
+    <div id ="dashboard" class="container-fluid">
+
+      <h1>{{name}}</h1>
         <div class="row">
           <div class="col placeholder">
             Competition %
@@ -122,7 +125,7 @@
               </tr>
               <tr>
                 <td></td>
-                <td>Write middleware</td>
+                <td>Write a middleware</td>
                 <td>Epic</td>
                 <td>XL</td>
                 <td>California Dream</td>
@@ -143,5 +146,8 @@
       // Tablesort plugin from http://tristen.ca/tablesort/demo/
       new Tablesort(document.getElementById('taskTable'));
     </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="Public/Js/app.js"></script>
   </body>
 </html>
