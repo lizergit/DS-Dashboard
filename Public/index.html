@@ -50,7 +50,7 @@
             Competition %
           </div>
 
-          <section id='targetDate' class="col">
+          <section id="targetDate" class="col">
 
 
               <h2>Target Date</h2>
@@ -96,43 +96,25 @@
                 <th>Assigned Team</th>
                 <th>Status</th>
                 <th>Started</th>
+                <th>Closed</th>
                 <th>Hrs</th>
                 <th>% Compelete</th>
+                <th>Current Sprint</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr v-for="task in tasks">
                 <td></td>
-                <td>Create a dashboard</td>
-                <td>Story</td>
-                <td>M</td>
-                <td>Noble Carrots</td>
-                <td>Started</td>
-                <td>2018-08-02</td>
-                <td>90</td>
-                <td>95%</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Update unit tests</td>
-                <td>Story</td>
-                <td>M</td>
-                <td>Ms why S</td>
-                <td>Closed</td>
-                <td>2018-07-15</td>
-                <td>40</td>
-                <td>100%</td>
-              </tr>
-              <tr>
-                <td></td>
-                <td>Write a middleware</td>
-                <td>Epic</td>
-                <td>XL</td>
-                <td>California Dream</td>
-                <td>Open</td>
-                <td></td>
-                <td></td>
-                <td>0%</td>
+                <td>{{ task.title }}</td>
+                <td>{{ task.type }}</td>
+                <td>{{ task.size }}</td>
+                <td>{{ task.team }}</td>
+                <td>{{ task.status }}</td>
+                <td>{{ task.start_date }}</td>
+                <td>{{ task.close_date }}</td>
+                <td>{{ task.hours_worked }}</td>
+                <td>{{ task.perc_complete }}</td>
+                <td>{{ task.current_sprint }}</td>
               </tr>
 
             </tbody>
